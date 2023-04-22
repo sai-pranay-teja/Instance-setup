@@ -24,7 +24,9 @@ provisioner "remote-exec" {
 
   inline = [
     "sudo labauto jenkins",
-    "sudo labauto terraform"
+    "sudo labauto terraform",
+    "sudo labauto sonarqube",
+    "sudo labauto sonar-scanner"
     ]
   
 }
