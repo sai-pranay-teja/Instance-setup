@@ -5,7 +5,7 @@ provider "aws" {
 
 resource "aws_spot_instance_request" "name_2" {
     ami           = "ami-0bb6af715826253bf"
-    instance_type = "t3a.small"
+    instance_type = "t3a.medium"
     spot_type     = "persistent"
     iam_instance_profile = aws_iam_instance_profile.demo-profile.name
     instance_interruption_behavior = "stop"
